@@ -1,320 +1,79 @@
-body{background-color:red;
-background-image: url(images/beautysalon.jpg);
+@charset "utf-8";
+/* CSS Document */
 
 
-linear-gradient(to bottom,#FFFFFF,#4F6D94 );
-
-color: #666666;
-
-font-family: Arial, Verdana,
-
-Sans-Serif;
-
+/* Styles for img and body */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-header{background-color: #FFB6C1;
+nav.navbar { background-color: black;}
 
-background-repeat: no-repeat;
-
-background-position: right;
-
-text-align:center;
-
-height:60px;
-
-padding-top:15px;
-
-color: #FF69B4;
-
+img {height: auto; max-width: 100%}
+body {margin-right:auto;
+	  margin-left: auto;
+	  width: 80%;
+	 font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
 }
 
-nav{font-weight: bold;
-
-float:left;
-
-width:160px;
-
-padding:20px;
-
+.info {background-color: black;
+	   color:white;
+	   text-align: center;
+	   padding-top:2em; 
+	padding-bottom:9.1em;
 }
 
-nav a {margin:20px;
-
-text-decoration: none;
-
--webkit-transition: color 3s ease-out;
-
--moz-transition: color 3s ease-out;
-
--o-transition: color 3s ease-out
-
+#myComments{
+	margin-top: auto;
 }
 
-nav a:link{color:#FF69B4;}
-
-nav a:visited{color:#344873;}
-
-nav a:hover{color:#FFFFFF;}
-
-nav ul{list-style-type:none;
-
-margin:0;
-
-padding-left:0;
-
-font-size:1.2em;
-
+h3 a:link{
+	color: #000000;
+	text-decoration: none;
 }
 
-h1{margin-bottom: 0px;
-
-margin-top:0px;
-
-font-family: Arial, Verdana,
-
-Sans-Serif;
-
-}
-
-h2{color: #FF69B4;
-
-text-shadow: 1px 1px 1px #CCCCCC;
-
-}
-
-h3{ font-family: Arial,
-
-Sans-Serif, Times;
-color: #FF69B4;
-
+h3 a:hover{
+	color: #FFB6C1;
 }
 
 
-
-
-footer{font-size:75%;
-
-padding:20px;
-
-margin-left:190px;
-
-background-color:#FFFFFF;
-
-font-style:italic;
-
-text-align:center;
-
-font-family: Arial,
-
-Sans-Serif, Times;
-
-clear:right;
-
-background-color: #F5F5DC;
-
+.carousel {
+	overflow: hidden;
+	margin-bottom: 4rem;
 }
 
-#contact{font-size:90%;}
-
-#wrapp{margin-left:auto;
-
-margin-right:auto;
-
-width:80%;
-
-background-color:#90C7E3;
-
-min-width: 960px;
-
-max-width:2048px;
-
-box-shadow:3px 3px 3px #333333;
-
+.thanks {
+  background-image: url("images/thanks.jpg");
+  min-height: 900px;
+  position: relative;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-#home{height:300px;
-
-background-image:url(images/beautysalon.jpeg);
-
-background-repeat:no-repeat;
-
-background-size:100% 100%;
-
-margin-left:190px;
-
+.col-sm {
+  width: auto;
+  height: 225px;
+  max-height: 225px;
 }
 
-#Products{height:300px;
-
-background-image:url(images/beautysalon.jpeg);
-
-background-repeat:no-repeat;
-
-background-size:100% 100%;
-
-margin-left:190px;
-
-text-align:center;
-
+#button {
+	background-color: #FFB6C1;
+	color: #ffffff;
+	border-color: #FFB6C1;
 }
 
-#Beauticians{height:300px;
-
-background-image:url(images/beautysalon.jpeg);
-
-background-repeat:no-repeat;
-
-background-size:100% 100%;
-
-margin-left:190px;
-
-text-align:center;
-
-}
-#salon{height:300px;
-
-background-image:url(images/beautysalon.jpeg);
-
-background-repeat:no-repeat;
-
-background-size:100% 100%;
-
-margin-left:190px;
-text-align:center;
-
-}
-#Service{height:300px;
-
-background-image:url(images/beautysalon.jpeg);
-
-background-repeat:no-repeat;
-
-background-size:100% 100%;
-
-margin-left:190px;
-text-align:center;
-
-}
-#Contact{height:300px;
-
-background-image:url(images/beautysalon.jpeg);
-background-repeat:no-repeat;
-
-background-size:100% 100%;
-
-margin-left:190px;
-text-align:center;
-
+.cta {
+  position: absolute;
+  left: 55%;
+  top: 20%;
+  text-align: center;
 }
 
-main{padding-top:1px;
-
-padding-right:20px;
-
-padding-bottom:20px;
-
-padding-left:30px;
-
-margin-left:190px;
-
-display:block;
-
-background-color:#F5F5DC;
-
-}
-
-dt{padding: 10px;}
-
-table{border:solid 1px #3399CC;
-
-width:80%;
-
-border-spacing:0;
-
-}
-
-td, th{padding:10px;
-
-border: solid 1px #3399CC;
-
-}
-
-td{text-align:center;}
-
-.text{text-align:left;}
-
-tr:nth-of-type(odd) {background-color: #F5FAFC;}
-
-label{float:left;
-
-display:block;
-
-width:120px;
-
-text-align:right;
-
-padding-right:10px;
-
-}
-
-input, textarea
-
-{ display:block;
-
-margin-bottom:20px;
-
-}
-
-input[type="submit"]{margin-left:130px;
-
-}
-
-video,embed {float:right;
-
-padding-left:20px;
-
-width:320px;
-
-height:240px;
-
-}
-
-/*home page styles for slideshow and slide bar(dots) */
-
-#fade{
-
-width:650px;
-
-height:402px;
-
-}
-
-.slick-dots li button:focus { outline: none; }
-
-.slick-dots li button:before {
-
-position: relative;
-
-top: 0;
-
-left: 0;
-
-color: black;
-
-opacity: 0.25;
-
--webkit-font-smoothing: antialiased;
-
--moz-osx-font-smoothing: grayscale;
-
-}
-
-.slick-dots li.slick-active button:before {
-
-opacity: 0.75;
-
-}
-
+h1 {text-align: center;}
 /*Support of HTML5*/
 
 header, main, nav footer, figure, figcaption,
@@ -335,120 +94,13 @@ padding:20px;
 
 }
 
-nav {padding:0;
-
+#mobile h3 a:link{
+	color: #000000;
+	text-decoration: none;
 }
 
-nav a {display:block;}
-
-nav li{ display:block;
-
-margin:0;
-
-border-bottom:
-
-solid 2px #330000;
-
+#mobile h3 a:hover{
+	color: #FFB6C1;
 }
 
-header{padding-top:1em;
-
 }
-
-main{padding-top:0.1em;
-
-padding-bottom:0.1em;
-
-padding-left:1em;
-
-padding-right:1em;
-
-font-size:90%;
-
-}
-
-h1{font-size:1.5em;
-
-}
-
-#home{display:none;
-
-height:auto;
-
-}
-
-#salon{display:none;
-
-height:auto;
-
-}
-
-#services{display:none;
-
-height:auto;
-
-}
-#beauticians{display:none;
-
-height:auto;
-
-}
-#products{display:none;
-
-height:auto;
-
-}
-#contact{display:none;
-
-height:auto;
-
-}
-
-
-#mobile{display:inline;
-
-}
-
-#desktop{display:none;
-
-}
-
-table{border:solid 1px #3399CC;
-
-width:80%;
-
-border-spacing:0;
-
-}
-
-td,th{padding:5px;
-
-border:solid 1px #3399CC;
-
-}
-
-td{text-align:center;
-
-}
-
-.text{text-align:left;
-
-}
-
-tr:nth-of-type(odd) {background-color: #F5FAFC;
-
-}
-
-label{float:none;
-
-text-align:left;
-
-}
-
-input[type="submit"]
-
-{margin-left:0;}
-
-#fade{width:100%;}
-
-
